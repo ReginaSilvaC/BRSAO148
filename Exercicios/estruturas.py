@@ -9,7 +9,23 @@ print("E mora em",cidade)
 # Estrutura de repetição
 for i in range(5):
     print("Contar", i)
+
 contar = 0
 while contar < 5:
     print("Executar", contar)  
-    contar += 1    
+    contar += 1  
+
+# Estrutura condicional
+idade = 16
+if idade > 18:
+    print("Maior de idade!") 
+elif idade < 18:
+    print("Menor de idade, vá dormir!")   
+else: 
+    print("Não identificado")
+
+    ida =int(input("Digite a sua idade: "))
+    if ida >= 18:
+        print("Maior de idade")
+    else:
+        print("Menor de idade")    
