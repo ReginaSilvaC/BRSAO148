@@ -1,0 +1,21 @@
+# Lista de números a serem analisados
+numeros = [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 13, 15, 16, 17, 18, 19]
+
+# Percorre cada número da lista
+for numero in numeros:
+    # Números menores que 2 não são primos, então pula para o próximo
+    if numero < 2:
+        continue
+    
+    # Assume que o número é primo até provar o contrário
+    eh_primo = True
+    
+    # Testa todos os divisores possíveis entre 2 e o número - 1
+    for i in range(2, numero):
+        if numero % i == 0:
+            eh_primo = False  # Encontrou um divisor, então não é primo
+            break  # Para de testar outros divisores
+    
+    # Se ainda for primo, imprime o número
+    if eh_primo:
+        print(f"{numero} é primo.")
